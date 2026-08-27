@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>تفاصيل الهاتف</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+
+<header class="hero">
+
+<div class="logo">
+📱 شنو تشتري؟
+</div>
+
+<h1>
+تفاصيل الهاتف
+</h1>
+
+</header>
+
+
+
+
+<main id="phoneDetails" class="details">
+
+</main>
+
+
+
+
+
+<nav>
+
+
+<a href="index.html">
+
+🏠
+
+<br>
+
+الرئيسية
+
+</a>
+
+
+<a href="favorites.html">
+
+❤️
+
+<br>
+
+المفضلة
+
+</a>
+
+
+<a href="compare.html">
+
+⚖️
+
+<br>
+
+مقارنة
+
+</a>
+
+
+</nav>
+
+
+
+
+
+<script>
+
+
+let phoneID =
+Number(localStorage.getItem("phoneID"));
+
+
+
+fetch("data/phones.json")
+
+.then(res=>res.json())
+
+.then(phones=>{
+
+
+let phone =
+phones.find(
+p=>p.id===phoneID
+);
+
+
+
+document
+.getElementById("phoneDetails")
+.innerHTML = `
+
+
+
+<div class="details-card">
+
+
+
+<img 
+src="${phone.image}"
+>
+
+
+
+<h1>
+${phone.name}
+</h1>
+
+
+
+<h2 class="price">
+${phone.price}$
+</h2>
+
+
+
+<div class="rating">
+
+${"⭐".repeat(phone.rating)}
+
+</div>
+
+
+
+<div class="tags">
+
+${phone.uses.map(use=>`
+
+<span class="tag">
+${use}
+</span>
+
+`).join("")}
+
+</div>
+
+
+
+
+<div class="specs">
+
+
+<h2>
+المواصفات
+</h2>
+
+
+
+<p>
+📱 الشاشة:
+${phone.specs.screen}
+</p>
+
+
+<p>
+⚡ المعالج:
+${phone.specs.processor}
+</p>
+
+
+<p>
+💾 الرام:
+${phone.specs.ram}
+</p>
+
+
+<p>
+🔋 البطارية:
+${phone.specs.battery}
+</p>
+
+
+<p>
+📸 الكاميرا:
+${phone.specs.camera}
+</p>
+
+
+</div>
+
+
+
+
+<button onclick="favorite()">
+
+❤️ إضافة للمفضلة
+
+</button>
+
+
+
+</div>
+
+
+
+`;
+
+
+
+});
+
+
+
+
+
+function favorite(){
+
+
+let fav =
+JSON.parse(
+localStorage.getItem("favorites")
+)
+|| [];
+
+
+
+if(!fav.includes(phoneID)){
+
+fav.push(phoneID);
+
+}
+
+
+
+localStorage.setItem(
+"favorites",
+JSON.stringify(fav)
+);
+
+
+
+alert("تم الحفظ ❤️");
+
+
+}
+
+
+</script>
+
+
+
+</body>
+
+</html>
