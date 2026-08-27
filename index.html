@@ -2,93 +2,283 @@
 <html lang="ar" dir="rtl">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>شنو تشتري؟ 📱</title>
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
 
 </head>
 
+
 <body>
 
-<header>
-    <h1>📱 شنو تشتري؟</h1>
-    <p>اختار الهاتف المناسب حسب ميزانيتك</p>
+
+<!-- Header -->
+
+<header class="hero">
+
+<div class="logo">
+📱 شنو تشتري؟
+</div>
+
+
+<h1>
+اختار هاتفك المثالي
+</h1>
+
+
+<p>
+نساعدك تختار أفضل هاتف حسب ميزانيتك واستخدامك
+</p>
+
+
+
+<div class="search">
+
+<input 
+id="searchInput"
+placeholder="🔍 ابحث عن هاتف..."
+>
+
+
+</div>
+
+
 </header>
 
 
-<section class="search-box">
 
-<input 
-id="search"
-placeholder="ابحث عن هاتف..."
->
 
-<select id="category">
+<!-- الاختيار الذكي -->
 
-<option value="all">كل الفئات</option>
-<option value="اقتصادي">اقتصادي</option>
-<option value="متوسط">متوسط</option>
-<option value="رائد">رائد</option>
+
+<section class="smart-box">
+
+
+<h2>
+🤖 اختيارك الذكي
+</h2>
+
+
+<div class="filters">
+
+
+<div>
+
+<label>
+السعر
+</label>
+
+<select id="priceFilter">
+
+<option value="all">
+كل الأسعار
+</option>
+
+<option value="300">
+أقل من 300$
+</option>
+
+<option value="600">
+أقل من 600$
+</option>
+
+<option value="1000">
+أقل من 1000$
+</option>
+
+</select>
+
+</div>
+
+
+
+
+<div>
+
+<label>
+الاستخدام
+</label>
+
+<select id="useFilter">
+
+
+<option value="all">
+كل الاستخدامات
+</option>
+
+
+<option value="ألعاب">
+🎮 ألعاب
+</option>
+
+
+<option value="تصوير">
+📸 تصوير
+</option>
+
+
+<option value="دراسة">
+🎓 دراسة
+</option>
+
+
+<option value="عمل">
+💼 عمل
+</option>
+
 
 </select>
 
 
-<select id="usage">
-
-<option value="all">كل الاستخدامات</option>
-<option value="ألعاب">ألعاب</option>
-<option value="تصوير">تصوير</option>
-<option value="دراسة">دراسة</option>
-
-</select>
+</div>
 
 
-<input 
-id="price"
-type="number"
-placeholder="أعلى سعر $"
->
+<button onclick="smartSearch()">
 
+شنو أشتري؟ 🔥
 
-<button onclick="filterPhones()">
-شنو أشتري؟ 🔍
 </button>
+
+
+</div>
 
 
 </section>
 
 
 
-<main id="phones" class="phones-container">
 
-</main>
 
+<!-- التصنيفات -->
+
+
+<section>
+
+
+<h2 class="title">
+اختر حسب الاستخدام
+</h2>
+
+
+
+<div class="categories">
+
+
+<div class="category">
+🎮
+<br>
+ألعاب
+</div>
+
+
+<div class="category">
+📸
+<br>
+تصوير
+</div>
+
+
+<div class="category">
+🎓
+<br>
+دراسة
+</div>
+
+
+<div class="category">
+💰
+<br>
+اقتصادي
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- الهواتف -->
+
+
+<section>
+
+
+<h2 class="title">
+🔥 أفضل الهواتف
+</h2>
+
+
+
+<div id="phones" class="phones">
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+<!-- Bottom Navigation -->
 
 
 <nav>
 
+
 <a href="index.html">
+
 🏠
+
 <br>
+
 الرئيسية
+
 </a>
 
 
 <a href="favorites.html">
+
 ❤️
+
 <br>
+
 المفضلة
+
 </a>
+
+
+<a href="compare.html">
+
+⚖️
+
+<br>
+
+مقارنة
+
+</a>
+
 
 
 </nav>
 
 
 
-<script src="app.js"></script>
+
+
+<script src="js/app.js"></script>
+
 
 </body>
 
