@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>شنو تشتري؟ 📱</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+    <h1>📱 شنو تشتري؟</h1>
+    <p>اختار الهاتف المناسب حسب ميزانيتك</p>
+</header>
+
+
+<section class="search-box">
+
+<input 
+id="search"
+placeholder="ابحث عن هاتف..."
+>
+
+<select id="category">
+
+<option value="all">كل الفئات</option>
+<option value="اقتصادي">اقتصادي</option>
+<option value="متوسط">متوسط</option>
+<option value="رائد">رائد</option>
+
+</select>
+
+
+<select id="usage">
+
+<option value="all">كل الاستخدامات</option>
+<option value="ألعاب">ألعاب</option>
+<option value="تصوير">تصوير</option>
+<option value="دراسة">دراسة</option>
+
+</select>
+
+
+<input 
+id="price"
+type="number"
+placeholder="أعلى سعر $"
+>
+
+
+<button onclick="filterPhones()">
+شنو أشتري؟ 🔍
+</button>
+
+
+</section>
+
+
+
+<main id="phones" class="phones-container">
+
+</main>
+
+
+
+<nav>
+
+<a href="index.html">
+🏠
+<br>
+الرئيسية
+</a>
+
+
+<a href="favorites.html">
+❤️
+<br>
+المفضلة
+</a>
+
+
+</nav>
+
+
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
