@@ -1,0 +1,177 @@
+[
+ {
+  "id":1,
+  "name":"iPhone 17 Pro Max",
+  "brand":"Apple",
+  "price":1299,
+  "category":"رائد",
+  "uses":[
+    "تصوير",
+    "ألعاب",
+    "عمل"
+  ],
+  "image":"images/iphone17.jpg",
+  "rating":5,
+  "specs":{
+    "screen":"6.9 OLED Super Retina XDR",
+    "processor":"Apple A19 Pro",
+    "ram":"12GB",
+    "battery":"5000mAh",
+    "camera":"48MP Triple Camera"
+  }
+ },
+
+
+ {
+  "id":2,
+  "name":"Samsung Galaxy S26 Ultra",
+  "brand":"Samsung",
+  "price":1199,
+  "category":"رائد",
+  "uses":[
+    "تصوير",
+    "ألعاب",
+    "عمل"
+  ],
+  "image":"images/s26ultra.jpg",
+  "rating":5,
+  "specs":{
+    "screen":"6.9 Dynamic AMOLED 2X",
+    "processor":"Snapdragon 8 Elite",
+    "ram":"12GB",
+    "battery":"5200mAh",
+    "camera":"200MP"
+  }
+ },
+
+
+ {
+  "id":3,
+  "name":"Google Pixel 10 Pro",
+  "brand":"Google",
+  "price":999,
+  "category":"رائد",
+  "uses":[
+    "تصوير",
+    "دراسة"
+  ],
+  "image":"images/pixel10.jpg",
+  "rating":5,
+  "specs":{
+    "screen":"6.7 OLED 120Hz",
+    "processor":"Tensor G5",
+    "ram":"16GB",
+    "battery":"5000mAh",
+    "camera":"50MP AI Camera"
+  }
+ },
+
+
+ {
+  "id":4,
+  "name":"Xiaomi 15 Ultra",
+  "brand":"Xiaomi",
+  "price":899,
+  "category":"رائد",
+  "uses":[
+    "تصوير",
+    "ألعاب"
+  ],
+  "image":"images/xiaomi15.jpg",
+  "rating":5,
+  "specs":{
+    "screen":"6.73 AMOLED",
+    "processor":"Snapdragon 8 Elite",
+    "ram":"16GB",
+    "battery":"5410mAh",
+    "camera":"200MP Leica"
+  }
+ },
+
+
+ {
+  "id":5,
+  "name":"OnePlus 13",
+  "brand":"OnePlus",
+  "price":799,
+  "category":"رائد",
+  "uses":[
+    "ألعاب",
+    "عمل"
+  ],
+  "image":"images/oneplus13.jpg",
+  "rating":5,
+  "specs":{
+    "screen":"6.82 AMOLED 120Hz",
+    "processor":"Snapdragon 8 Elite",
+    "ram":"16GB",
+    "battery":"6000mAh",
+    "camera":"50MP"
+  }
+ },
+
+
+ {
+  "id":6,
+  "name":"Samsung Galaxy A56",
+  "brand":"Samsung",
+  "price":399,
+  "category":"متوسط",
+  "uses":[
+    "دراسة",
+    "تصوير"
+  ],
+  "image":"images/a56.jpg",
+  "rating":4,
+  "specs":{
+    "screen":"6.7 Super AMOLED",
+    "processor":"Exynos",
+    "ram":"8GB",
+    "battery":"5000mAh",
+    "camera":"50MP"
+  }
+ },
+
+
+ {
+  "id":7,
+  "name":"Poco F7",
+  "brand":"Xiaomi",
+  "price":499,
+  "category":"متوسط",
+  "uses":[
+    "ألعاب"
+  ],
+  "image":"images/pocof7.jpg",
+  "rating":5,
+  "specs":{
+    "screen":"6.7 AMOLED 120Hz",
+    "processor":"Snapdragon 8s",
+    "ram":"12GB",
+    "battery":"6000mAh",
+    "camera":"50MP"
+  }
+ },
+
+
+ {
+  "id":8,
+  "name":"Redmi Note 14 Pro",
+  "brand":"Xiaomi",
+  "price":299,
+  "category":"اقتصادي",
+  "uses":[
+    "دراسة",
+    "تصوير"
+  ],
+  "image":"images/redmi14.jpg",
+  "rating":4,
+  "specs":{
+    "screen":"6.67 AMOLED",
+    "processor":"Dimensity",
+    "ram":"8GB",
+    "battery":"5500mAh",
+    "camera":"200MP"
+  }
+ }
+]
