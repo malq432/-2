@@ -1,0 +1,485 @@
+*{
+    box-sizing:border-box;
+    font-family: "Tahoma", Arial, sans-serif;
+}
+
+
+body{
+
+    margin:0;
+
+    background:
+    linear-gradient(180deg,#050816,#111827);
+
+    color:white;
+
+    padding-bottom:90px;
+
+}
+
+
+
+/* الهيرو */
+
+.hero{
+
+    padding:35px 20px;
+
+    background:
+    linear-gradient(135deg,#2563eb,#9333ea);
+
+    border-radius:0 0 40px 40px;
+
+    text-align:center;
+
+}
+
+
+.logo{
+
+    font-size:30px;
+
+    font-weight:bold;
+
+}
+
+
+
+.hero h1{
+
+    font-size:32px;
+
+    margin:25px 0 10px;
+
+}
+
+
+.hero p{
+
+    opacity:.9;
+
+    font-size:16px;
+
+}
+
+
+
+
+/* البحث */
+
+.search{
+
+    margin-top:25px;
+
+}
+
+
+.search input{
+
+    width:100%;
+
+    padding:17px;
+
+    border-radius:20px;
+
+    border:none;
+
+    outline:none;
+
+    background:white;
+
+    color:#111;
+
+    font-size:16px;
+
+}
+
+
+
+
+
+/* صندوق الاختيار */
+
+.smart-box{
+
+
+    margin:20px;
+
+    background:
+
+    rgba(255,255,255,.08);
+
+
+    backdrop-filter:blur(15px);
+
+
+    border-radius:30px;
+
+
+    padding:20px;
+
+
+}
+
+
+
+.smart-box h2{
+
+    margin-top:0;
+
+}
+
+
+
+.filters{
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+
+
+.filters label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+}
+
+
+
+select{
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:18px;
+
+    border:none;
+
+    background:#1e293b;
+
+    color:white;
+
+}
+
+
+
+button{
+
+
+    padding:16px;
+
+    border-radius:20px;
+
+    border:none;
+
+    background:#22c55e;
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+
+/* التصنيفات */
+
+
+.title{
+
+    margin:25px 20px;
+
+}
+
+
+
+.categories{
+
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:10px;
+
+    padding:0 20px;
+
+}
+
+
+
+.category{
+
+
+    background:
+
+    rgba(255,255,255,.1);
+
+
+    padding:15px 5px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    font-size:14px;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.category:hover{
+
+
+    transform:translateY(-5px);
+
+    background:#2563eb;
+
+
+}
+
+
+
+
+
+
+/* الهواتف */
+
+
+.phones{
+
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+    padding:0 20px;
+
+
+}
+
+
+
+.phone-card{
+
+
+    background:#111827;
+
+
+    border-radius:30px;
+
+
+    overflow:hidden;
+
+
+    padding-bottom:15px;
+
+
+    box-shadow:
+    0 15px 30px rgba(0,0,0,.3);
+
+
+}
+
+
+
+.phone-card img{
+
+
+    width:100%;
+
+
+    height:190px;
+
+
+    object-fit:contain;
+
+
+    background:white;
+
+
+}
+
+
+
+.phone-card h3{
+
+
+    padding:0 15px;
+
+    font-size:18px;
+
+
+}
+
+
+
+.phone-info{
+
+
+    padding:0 15px;
+
+
+}
+
+
+
+.price{
+
+
+    color:#22c55e;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+
+}
+
+
+
+.rating{
+
+    color:#facc15;
+
+}
+
+
+
+.phone-buttons{
+
+
+    display:flex;
+
+    gap:10px;
+
+    padding:15px;
+
+}
+
+
+
+.phone-buttons button{
+
+
+    flex:1;
+
+    padding:10px;
+
+    font-size:13px;
+
+
+}
+
+
+
+
+
+
+/* القائمة السفلية */
+
+
+nav{
+
+
+    position:fixed;
+
+
+    bottom:0;
+
+
+    right:0;
+
+
+    left:0;
+
+
+    background:#020617;
+
+
+    display:flex;
+
+
+    justify-content:space-around;
+
+
+    padding:12px;
+
+
+    border-radius:30px 30px 0 0;
+
+
+}
+
+
+
+nav a{
+
+
+    color:white;
+
+
+    text-decoration:none;
+
+
+    text-align:center;
+
+
+    font-size:14px;
+
+
+}
+
+
+
+
+
+
+
+@media(max-width:600px){
+
+
+    .phones{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    .categories{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+
+    .hero h1{
+
+        font-size:25px;
+
+    }
+
+
+}
