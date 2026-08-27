@@ -1,0 +1,88 @@
+[
+ {
+  "id":1,
+  "name":"iPhone 17 Pro Max",
+  "brand":"Apple",
+  "price":1299,
+  "category":"رائد",
+  "uses":["تصوير","ألعاب","مونتاج"],
+  "image":"https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-17-pro-max.jpg",
+  "specs":{
+    "screen":"6.9 OLED Super Retina",
+    "processor":"A19 Pro",
+    "ram":"12GB",
+    "battery":"5000mAh",
+    "camera":"48MP Triple Camera"
+  }
+ },
+
+ {
+  "id":2,
+  "name":"Samsung Galaxy S26 Ultra",
+  "brand":"Samsung",
+  "price":1199,
+  "category":"رائد",
+  "uses":["تصوير","ألعاب","عمل"],
+  "image":"https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s26-ultra.jpg",
+  "specs":{
+    "screen":"6.9 Dynamic AMOLED",
+    "processor":"Snapdragon 8 Elite",
+    "ram":"12GB",
+    "battery":"5200mAh",
+    "camera":"200MP"
+  }
+ },
+
+ {
+  "id":3,
+  "name":"Xiaomi Poco F7",
+  "brand":"Xiaomi",
+  "price":499,
+  "category":"متوسط",
+  "uses":["ألعاب","دراسة"],
+  "image":"https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-poco-f7.jpg",
+  "specs":{
+    "screen":"6.7 AMOLED 120Hz",
+    "processor":"Snapdragon 8s",
+    "ram":"12GB",
+    "battery":"6000mAh",
+    "camera":"50MP"
+  }
+ },
+
+
+ {
+  "id":4,
+  "name":"Samsung Galaxy A56",
+  "brand":"Samsung",
+  "price":399,
+  "category":"متوسط",
+  "uses":["دراسة","تصوير"],
+  "image":"https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a56.jpg",
+  "specs":{
+    "screen":"6.6 Super AMOLED",
+    "processor":"Exynos",
+    "ram":"8GB",
+    "battery":"5000mAh",
+    "camera":"50MP"
+  }
+ },
+
+
+ {
+  "id":5,
+  "name":"Redmi Note 14 Pro",
+  "brand":"Xiaomi",
+  "price":299,
+  "category":"اقتصادي",
+  "uses":["دراسة","تصوير"],
+  "image":"https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-note-14-pro.jpg",
+  "specs":{
+    "screen":"6.67 AMOLED",
+    "processor":"Mediatek Dimensity",
+    "ram":"8GB",
+    "battery":"5500mAh",
+    "camera":"200MP"
+  }
+ }
+]
